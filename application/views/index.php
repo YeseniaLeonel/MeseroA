@@ -17,7 +17,7 @@
 		<div class="col">
 			<ul class="nav justify-content-end">
 				<li class="nav-item">
-				  <a class="btn btn-outline-danger" type="button">Iniciar sesion</a>
+				  <a class="btn btn-outline-danger" type="button" href="http://localhost/mesero/index.php/persona/login">Iniciar sesion</a>
     			  <a class="btn btn-outline-warning" type="button" href="http://localhost/mesero/index.php/persona/sigin">Crear usuario</a>
 				</li>
 			</ul>
