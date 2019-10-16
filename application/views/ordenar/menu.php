@@ -6,39 +6,18 @@
 </head>
 <body>
 	<div class="container">
-		<div>Menú</div>
-		<h1>Cafés</h1>
-		<div class="form-check">
-		    <input type="checkbox" class="form-check-input" >
-		    <label class="form-check-label" for="materialUnchecked">Espresso</label>
-		</div>
-		<div class="form-check">
-		  <input type="checkbox" class="form-check-input" >
-		  <label class="form-check-label" for="materialChecked2">Americano</label>
-		</div>
-		<div class="form-check">
-		  <input type="checkbox" class="form-check-input" >
-		  <label class="form-check-label" for="materialChecked2">Americano con nieve</label>
-		</div>
-		<div class="form-check">
-		  <input type="checkbox" class="form-check-input" >
-		  <label class="form-check-label" for="materialChecked2">Capuccino</label>
-		</div>
-		<div class="form-check">
-		  <input type="checkbox" class="form-check-input" >
-		  <label class="form-check-label" for="materialChecked2">Mochachino</label>
-		</div>
-		<div class="form-check">
-		  <input type="checkbox" class="form-check-input" >
-		  <label class="form-check-label" for="materialChecked2">Mocha</label>
-		</div>
-		<div class="form-check">
-		  <input type="checkbox" class="form-check-input" >
-		  <label class="form-check-label" for="materialChecked2">Latte</label>
-		</div>
+		<a href="guardar" class="btn btn-success">Enviar</a>
+		<br><br>
+
+	  	<?php foreach ($bebidasFrias as $key => $p): ?>
+	  		<div>
+	  			<input type="checkbox" class="custom-control-input" id="<?php $p->ID_Bebida; ?> ">
+	      		<label  class="custom-control-label"><?php echo $p->nombre_bebida;?></label>
+	  		</div>
+	      		
+	  	<?php endforeach; ?>	
 	</div>
+		
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </html>
