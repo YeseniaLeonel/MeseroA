@@ -9,7 +9,7 @@
 		<a href="guardar" class="btn btn-success">Enviar</a>
 		<br><br>
 
-	  	<?php foreach ($bebidasFrias as $key => $p): ?>
+	  	<?php foreach ($BFrias as $key => $p): ?>
 	  		<div>
 	  			<input type="checkbox" class="custom-control-input" id="<?php $p->ID_Bebida; ?> ">
 	      		<label  class="custom-control-label"><?php echo $p->nombre_bebida;?></label>

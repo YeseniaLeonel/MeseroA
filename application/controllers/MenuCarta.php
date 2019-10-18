@@ -11,6 +11,9 @@ class MenuCarta extends CI_Controller {
 
 	public function mostrar(){
 		$BFrias["bebidasFrias"] = $this->consultasBebidas->find_clasificacion('1');
+		if($BFrias->num_rows < 0){
+			echo "No hay datos";
+		}
 		//echo "$BFrias[0]";
 		$this->load->view('ordenar/menu', $BFrias);
 	}

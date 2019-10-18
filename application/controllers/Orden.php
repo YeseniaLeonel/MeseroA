@@ -10,4 +10,8 @@ class Orden extends CI_Controller {
 		$this->load->helper("url");
 	}
 
+	public function index(){
+		$this->load->view('ordenar/menu');
+	}
+
 }
