@@ -6,18 +6,26 @@
 </head>
 <body>
 	<div class="container">
-		<a href="guardar" class="btn btn-success">Enviar</a>
 		<br><br>
-
-	  	<?php foreach ($BFrias as $key => $p): ?>
-	  		<div>
-	  			<input type="checkbox" class="custom-control-input" id="<?php $p->ID_Bebida; ?> ">
-	      		<label  class="custom-control-label"><?php echo $p->nombre_bebida;?></label>
-	  		</div>
-	      		
-	  	<?php endforeach; ?>	
-	</div>
 		
+		<br><br>
+		<h2> <?php echo "$titulo" ?></h2>
+	  	<?php foreach ($menuArray as $key => $p): ?>
+	  		<div>
+	  			<input type="checkbox" class="custom-control-input" id="1">
+	      		<label  class="custom-control-label">
+	      			<?php if(isset($p->nombre_b)){ 
+	      					 echo "$p->nombre_b";
+	      			 }else{
+	      			 	echo "$p->nombre_platillo";
+	      			 }?>			
+	      		</label>
+	  		</div>	      		
+	  	<?php endforeach; ?>	
+	  	<br><br>
+	  	
+	</div>
+	<a href="guardar" class="btn btn-success">Enviar</a>
 </body>
 
 </html>

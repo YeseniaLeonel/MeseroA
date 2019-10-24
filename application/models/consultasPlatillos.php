@@ -1,9 +1,9 @@
 <?php
 	
-class consultasBebidas extends CI_Model{
-	public $table = 'bebida';
-	public $table_id = 'ID_bebida';
-	public $clasificacion = 'clasificacion';
+class consultasPlatillos extends CI_Model{
+	public $table = 'platillo';
+	public $table_id = 'ID_platillo';
+	public $clasificacion = 'clasificacion_p';
 
 	public function __construct(){
 		
@@ -26,5 +26,3 @@ class consultasBebidas extends CI_Model{
 		return $query->result();	
 	}
 }
-
-?>
