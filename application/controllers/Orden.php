@@ -10,8 +10,9 @@ class Orden extends CI_Controller {
 		$this->load->helper("url");
 	}
 
-	public function index(){
-		$this->load->view('ordenar/menu');
+	public function guardarOrden(){
+		$pedido = $_POST["Seleccionados"];
+		echo "$pedido[1]";
 	}
 
 }

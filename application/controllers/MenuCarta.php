@@ -2,6 +2,8 @@
 
 
 class MenuCarta extends CI_Controller {
+
+
 	public function __construct(){
 		parent::__construct(); 
 		$this->load->helper("url");
@@ -12,9 +14,28 @@ class MenuCarta extends CI_Controller {
 		$this->load->helper('form');
 	}
 
+	public function index(){
+		/*echo "	<!DOCTYPE html>
+				<html>
+				<head>
+					<title>Menu</title>
+					<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+				</head>
+				<body>
+					<form action='../Orden/guardarOrden' method='POST'>";*/
+		$this->load->view("ordenar/menu");
+		$this->mostrar();
+		echo "		<p><input type='submit' value='Solicitar Pedido'></p>
+				</form>
+			</body>
+		</html>";
+	}
+
 	public function mostrar(){
 
+
 		$clasi["clasificaciones"] = $this->consultasClasificacion->findall();
+		echo "<br><br><h1 align='center' >Menú</h1>";
 
 		if(isset($clasi)){
 			foreach ($clasi["clasificaciones"] as $key => $value) {
@@ -24,10 +45,12 @@ class MenuCarta extends CI_Controller {
 					$menu["menuArray"] = $this->consultasPlatillos->find_clasificacion($value->ID_clasificacion);
 				}
 
-				$this->load->view("ordenar/menu", $menu);
+				$this->load->view("ordenar/plantillaMenu", $menu);
 			}
 		}
+		//$this->load->view("ordenar/menu");
 	}
+
 }
 
 ?>

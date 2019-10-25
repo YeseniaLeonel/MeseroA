@@ -10,7 +10,7 @@
 		<div class="col">
 			<nav class="navbar navbar-expand-lg" style="background-color: #FF811D;">
 				<a class="navbar-brand" href="#" style="color: #111A67">Mesero</a>
-				<a class="navbar-brand" href="#" style="color: #111A67">Menú</a>
+				<a class="navbar-brand" href="http://localhost/mesero/index.php/MenuCarta/Mostrar" style="color: #111A67">Menú</a>
 				<a class="navbar-brand" href="#" style="color: #111A67">Contacto</a>
 			</nav>
 		</div>

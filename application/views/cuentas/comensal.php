@@ -11,7 +11,7 @@
 	    <div class="col-3">
 	       <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 			  <a class="nav-link active" href="perfil" >Perfil</a><br>
-			  <a class="nav-link active" href="../MenuCarta/mostrar" >Menú</a><br>
+			  <a class="nav-link active" href="../MenuCarta/index" >Menú</a><br>
 			  <a class="nav-link active" href="#" >Pedidos en proceso</a><br>
 			  <a class="nav-link active" href="#" >Historial</a><br>
 			  <a class="nav-link active" href="#" >Contacto</a><br>
