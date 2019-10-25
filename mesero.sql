@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 24, 2019 at 09:25 AM
+-- Generation Time: Oct 25, 2019 at 09:27 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.14
 
@@ -32,19 +32,20 @@ CREATE TABLE `bebida` (
   `ID_bebida` int(11) NOT NULL,
   `nombre_b` varchar(50) NOT NULL,
   `clasificacion` int(11) NOT NULL,
-  `descripcion_b` varchar(300) NOT NULL
+  `descripcion_b` varchar(300) NOT NULL,
+  `precio_b` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `bebida`
 --
 
-INSERT INTO `bebida` (`ID_bebida`, `nombre_b`, `clasificacion`, `descripcion_b`) VALUES
-(1, 'Frapuccino (Clasico)', 1, 'Es un café con hielo cubierto de espuma elaborado a partir de café instantáneo.'),
-(2, 'Mocha (Chocolate)', 1, 'Es una variante del café con leche. \r\nPreparado con un tercio de expreso y dos tercios de leche vaporizada,añadiendo una parte de jarabe de chocolate, agregando la famosa espuma de leche encima y canela.'),
-(3, 'Chai (Especies)', 1, 'Consiste en una mezcla de té con especias e hierbas aromáticas'),
-(4, 'Espresso', 2, 'Se caracteriza por su rápida preparación y por un sabor y textura más concentrados'),
-(5, 'Americano', 2, 'El café americano es la mezcla de agua caliente y café procesado en un máquina de Expreso');
+INSERT INTO `bebida` (`ID_bebida`, `nombre_b`, `clasificacion`, `descripcion_b`, `precio_b`) VALUES
+(1, 'Frapuccino (Clasico)', 1, 'Es un café con hielo cubierto de espuma elaborado a partir de café instantáneo.', 40),
+(2, 'Mocha (Chocolate)', 1, 'Es una variante del café con leche. \r\nPreparado con un tercio de expreso y dos tercios de leche vaporizada,añadiendo una parte de jarabe de chocolate, agregando la famosa espuma de leche encima y canela.', 38),
+(3, 'Chai (Especies)', 1, 'Consiste en una mezcla de té con especias e hierbas aromáticas', 35),
+(4, 'Espresso', 2, 'Se caracteriza por su rápida preparación y por un sabor y textura más concentrados', 30),
+(5, 'Americano', 2, 'El café americano es la mezcla de agua caliente y café procesado en un máquina de Expreso', 35);
 
 -- --------------------------------------------------------
 
@@ -103,21 +104,22 @@ CREATE TABLE `platillo` (
   `ID_platillo` int(11) NOT NULL,
   `nombre_platillo` varchar(50) NOT NULL,
   `clasificacion_p` int(11) NOT NULL,
-  `descripcion_p` varchar(200) NOT NULL
+  `descripcion_p` varchar(200) NOT NULL,
+  `precio_p` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `platillo`
 --
 
-INSERT INTO `platillo` (`ID_platillo`, `nombre_platillo`, `clasificacion_p`, `descripcion_p`) VALUES
-(2, 'Sandwich tradicional', 3, 'Jamon, Queso mozarella, Lechuga y Tomate con mayonesa'),
-(3, 'Enfrijoladas', 3, 'Platillo elaborado con tortillas de maíz que se sumergen en un caldillo espeso de frijoles molidos, enrolladas o dobladas, se sirven en un plato, con queso, cebolla y crema.'),
-(4, 'Madre Selva', 4, 'Ensalada con delicada mezcla de lechuga, durazno, queso mosarella, nuez de brasil triturada y trozos de filete de pollo asado con suave aderezo de aceite de oliva.'),
-(5, 'César', 4, 'Es una ensalada de lechuga romana y croûtons con jugo de limón, aceite de oliva, huevo, salsa Worcestershire, anchoas, ajo, mostaza de Dijon, queso parmesano y pimienta negra'),
-(6, 'Hamburguesa de filete de pollo', 5, '150gr de pollo marinado en mostaza, en pan Artillano con mayonesa de menta al limón, queso Mozarella asado, lechuga, tomate, pepinillos agridulces, licor de naranja.'),
-(7, 'Babel', 6, 'Brownie sobre reduccion de balsamico y vino tinto mas helado citron coronado con helado de frutos rojos y galleta de queso parmesano.'),
-(8, 'Ursula', 6, 'Torre de suave tortas de cafe marinadas en amaretto, licor de café y ron, entre capas de chocolate, terminada con crema chantilly y frutas de temporada.');
+INSERT INTO `platillo` (`ID_platillo`, `nombre_platillo`, `clasificacion_p`, `descripcion_p`, `precio_p`) VALUES
+(2, 'Sandwich tradicional', 3, 'Jamon, Queso mozarella, Lechuga y Tomate con mayonesa', 50),
+(3, 'Enfrijoladas', 3, 'Platillo elaborado con tortillas de maíz que se sumergen en un caldillo espeso de frijoles molidos, enrolladas o dobladas, se sirven en un plato, con queso, cebolla y crema.', 70),
+(4, 'Madre Selva', 4, 'Ensalada con delicada mezcla de lechuga, durazno, queso mosarella, nuez de brasil triturada y trozos de filete de pollo asado con suave aderezo de aceite de oliva.', 75),
+(5, 'César', 4, 'Es una ensalada de lechuga romana y croûtons con jugo de limón, aceite de oliva, huevo, salsa Worcestershire, anchoas, ajo, mostaza de Dijon, queso parmesano y pimienta negra', 80),
+(6, 'Hamburguesa de filete de pollo', 5, '150gr de pollo marinado en mostaza, en pan Artillano con mayonesa de menta al limón, queso Mozarella asado, lechuga, tomate, pepinillos agridulces, licor de naranja.', 60),
+(7, 'Babel', 6, 'Brownie sobre reduccion de balsamico y vino tinto mas helado citron coronado con helado de frutos rojos y galleta de queso parmesano.', 55),
+(8, 'Ursula', 6, 'Torre de suave tortas de cafe marinadas en amaretto, licor de café y ron, entre capas de chocolate, terminada con crema chantilly y frutas de temporada.', 40);
 
 -- --------------------------------------------------------
 
