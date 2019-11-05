@@ -8,6 +8,9 @@
                     <div class="home-content">
                       <div class="home-heading">
                         <h1><em>Comanda</em> Automática</h1>
+                        <div class="primary-button">
+                          <a href="#5">Ya tengo una cuenta</a>
+                        </div>
                       </div>
                       <div class="row">
                         <div class="col-md-12">
@@ -21,8 +24,10 @@
                               <br>
                               <br>
                               <div class="primary-button">
-                                <a href="#5">Ya tengo una cuenta</a>
+                                <a href="#4">Ir directo al registro</a>
                               </div>
+                              <br>
+                              <br>
                             </div>
                             <div class="right-image">
                               <img src="<?php echo base_url('assets/template/img/right-home-image.png'); ?>" alt="">
@@ -190,12 +195,12 @@
                       <div class="row">
                         <div class="col-md-8">
                           <div class="contat-form">
-                            <form id="contact" action="" method="post">
+                            <form id="contact" action="<?php echo base_url('login/registrar_cliente'); ?>" method="post">
                               <fieldset>
-                                <input name="name" type="text" class="form-control" id="name" placeholder="Tu Nombre" required>
+                                <input name="registro_nombre" type="text" class="form-control" id="registro_nombre" placeholder="Tu Nombre" required>
                               </fieldset>
                               <fieldset>
-                                <input name="telefono" type="text" class="form-control" id="email" placeholder="Tu número telefónico" required>
+                                <input name="registro_telefono" type="text" class="form-control" id="registro_telefono" placeholder="Tu número telefónico" required>
                               </fieldset>
                               <!-- <fieldset>
                                 <textarea name="message" rows="6" class="form-control" id="message" placeholder="Déjanos algún comentario..." required></textarea>
@@ -237,12 +242,12 @@
                       <div class="row">
                         <div class="col-md-8">
                           <div class="contat-form">
-                            <form id="contact" action="" method="post">
+                            <form id="contact" action="<?php echo base_url('login/autenticar_cliente'); ?>" method="post">
                               <fieldset>
-                                <input name="name" type="text" class="form-control" id="name" placeholder="Tu Nombre" required>
+                                <input name="ingreso_nombre" type="text" class="form-control" id="ingreso_nombre" placeholder="Tu Nombre" required>
                               </fieldset>
                               <fieldset>
-                                <input name="telefono" type="text" class="form-control" id="email" placeholder="Tu número telefónico" required>
+                                <input name="ingreso_telefono" type="text" class="form-control" id="ingreso_telefono" placeholder="Tu número telefónico" required>
                               </fieldset>
                               <!-- <fieldset>
                                 <textarea name="message" rows="6" class="form-control" id="message" placeholder="Déjanos algún comentario..." required></textarea>

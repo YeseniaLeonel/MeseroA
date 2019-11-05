@@ -18,7 +18,7 @@
 			<ul class="nav justify-content-end">
 				<li class="nav-item">
 				  <a class="btn btn-outline-danger" type="button" href="http://localhost/mesero/index.php/persona/login">Iniciar sesion</a>
-    			  <a class="btn btn-outline-warning" type="button" href="http://localhost/mesero/index.php/persona/sigin">Crear usuario</a>
+    			  <a class="btn btn-outline-warning" type="button" href="<?php echo base_url('login/logout'); ?>">Cerrar session</a>
 				</li>
 			</ul>
 		</div>
