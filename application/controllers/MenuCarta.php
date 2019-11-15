@@ -6,14 +6,17 @@ class MenuCarta extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		// if ($this->session->userdata('login_cliente') == FALSE) {
-		// 	redirect(base_url());
-		// }
+		if ($this->session->userdata('login_cliente') == FALSE) {
+			redirect(base_url());
+		}
 	}
 
 	public function index()
 	{
+		$this->load->view('layouts/dashboard/header');
+		$this->load->view('layouts/dashboard/nav');
 		$this->load->view('menu-carta');
+		$this->load->view('layouts/dashboard/footer');
 	}
 
 	// public function __construct(){
